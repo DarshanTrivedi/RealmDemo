@@ -1,0 +1,136 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/llOperation"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:text="Age"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:gravity="center_horizontal"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textSize="14sp"  android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:text="Gender"
+                android:textStyle="bold"
+                android:textSize="14sp"  android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llAddRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/edtAge"
+                android:gravity="center_horizontal"
+                android:hint="Enter age"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edtName"
+                android:gravity="center_horizontal"
+                android:hint="Enter name"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:textSize="18sp"  android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edtGender"
+                android:gravity="center_horizontal"
+                android:hint="Enter gender"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:textSize="18sp"  android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvViewRecord"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/llOperation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tvAddRecord"
+            android:gravity="center_horizontal"
+            android:text="Add Record"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="2dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvDeleteRecord"
+            android:gravity="center_horizontal"
+            android:text="Delete Record"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:textSize="16sp"  android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvViewRecord"
+            android:gravity="center_horizontal"
+            android:text="View Record"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:textSize="16sp"  android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
